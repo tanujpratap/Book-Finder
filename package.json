@@ -6,8 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "vercel-build": "npm install --include=dev && npm run build"
-
+    "prebuild": "chmod +x ./node_modules/.bin/vite"
   },
   "dependencies": {
     "react": "^18.2.0",
